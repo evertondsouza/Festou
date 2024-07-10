@@ -30,6 +30,33 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
+/*==================== BOTÃO DISCOVER ====================*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.querySelector('.discover__btn-prev');
+    const nextBtn = document.querySelector('.discover__btn-next');
+    const cards = document.querySelector('.discover__cards');
+
+    let cardIndex = 0;
+    const cardWidth = document.querySelector('.discover__card').offsetWidth;
+
+    prevBtn.addEventListener('click', function() {
+        cardIndex = Math.max(cardIndex - 1, 0);
+        updateSlidePosition();
+    });
+
+    nextBtn.addEventListener('click', function() {
+        cardIndex = Math.min(cardIndex + 1, cards.children.length - 1);
+        updateSlidePosition();
+    });
+
+    function updateSlidePosition() {
+        const translateX = -cardIndex * cardWidth;
+        cards.style.transform = `translateX(${translateX}px)`;
+    }
+});
+
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
     const header = document.getElementById('header')
@@ -38,18 +65,6 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== SWIPER DISCOVER ====================*/
-let swiper = new Swiper(".discover__container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    spaceBetween: 32,
-    coverflowEffect: {
-        rotate: 0,
-    },
-})
 
 /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file'),
