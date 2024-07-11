@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Responsive Website Travel</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">FESTOU</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">SOBRE NÓS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discover" class="nav__link">CRIAR EVENTO</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#place" class="nav__link">ANUNCIAR EVENTOS</a>
+                    </li>
+                </ul>
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <div class="box">
+            <div class="img-box">
+                <img src="img/image6.png" alt="Form Image">
+            </div>
+            <div class="form-box">
+                <h2>Cadastre-se e Anuncie</h2>
+                <p> Já é um parceiro? <a href="#">Fazer Login</a> </p>
+                <form action="#">
+                    <div class="input-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite o seu nome " required>
+                    </div>
+                    <div class="input-group">
+                        <label for="nome">Sobrenome</label>
+                        <input type="text" id="nome" placeholder="Digite o seu sobrenome " required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite o seu email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="telefone">Celular</label>
+                        <input type="tel" id="telefone" placeholder="Digite o seu Celular" required>
+                    </div>
+                    <div class="form_grupo">
+                        
+                        <div class="radio-btn">
+                            <input type="radio" class="form_new_input" id="Pessoa Fisica" name="Pessoa Fisica" value="Pessoa Fisica" required="required">
+                            <label for="Pessoa Fisica" class="radio_label form_label"> <span class="radio_new_btn"></span> Pessoa Fisica</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" class="form_new_input" id="Pessoa Juridica" name="Ra" value="Pessoa Juridica" required="required">
+                            <label for="Pessoa Juridica" class="radio_label form_label"> <span class="radio_new_btn"></span> Pessoa Juridica</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit">Anuncie com a gente</button>
+                    </div>
+                </form>
+            </div>
+            <div class="img-box">
+                <img src="img/image6-1.png" alt="Form Image">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Festou</h3>
+                    <p class="footer__description"> Conectamos você <br> à festa perfeita!</p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Sobre</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Sobre Nós</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Seja Nosso Parceiro</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Notícia</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Compania</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Equipe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Como Funciona</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Cadastro Empresariais</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Suporte</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">SAC</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Centrais de atendimentos</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2024 Equipe2. Todos os direitos reservados a Festou.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Termos e Acordos</a>
+                    <a href="#" class="footer__terms-link">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
