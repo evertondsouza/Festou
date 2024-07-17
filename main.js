@@ -19,6 +19,15 @@ if(navClose){
     })
 }
 
+const hamburguer = document.querySelector(".hamburguer");
+const  navMenu1 = document.querySelector(".nav-menu");
+
+hamburguer.addEventListener("click",()=>{
+    hamburguer.classList.toggle('active');
+    navMenu1.classList.toggle('active');
+})
+
+hamburguer.addEventListener()
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 

@@ -176,14 +176,22 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 5px;
+    margin-bottom: -6rem;
 }
 
 .img-box img {
     width: 100%; /* Tamanho específico para image6 */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 240px;
-    margin-bottom: -4rem; /*ajustando posicção no horizontal*/
+    height: 200px; /* Mantém a proporção da imagem */
+    max-width: 360px;
+    margin-right: 0px;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translateX(-30px); 
 }
 
 .form-box {
@@ -229,19 +237,6 @@ a{
     margin-bottom: 20px;
 }
 
-.radio-btn {
-    display: flex;
-    align-items: center;
-}
-
-.radio-btn input {
-    margin-right: 10px;
-}
-
-.radio_label {
-    margin: 0;
-}
-
 .input-group button {
     width: 100%;
     padding: 15px;
@@ -262,24 +257,19 @@ a{
     width: 100%; 
     padding: 2rem; 
 }
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
 
 .box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
-    gap: 2rem;
-}
-
-.img-box {
-    max-width: 300px;
-}
-
-.img-box img {
-    width: 100%;
-    height: auto;
-    display: block;
+    margin: 0.5rem 0;
+    gap: .5rem;
 }
 
 .form-box {
