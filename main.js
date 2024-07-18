@@ -196,3 +196,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Pag diversos barra de preço e avaliação//
+$(document).ready(function() {
+    // Atualizar valor do preço ao mover o controle deslizante
+    $("#priceRange").on("input", function() {
+        $("#priceValue").text($(this).val());
+    });
+
+    // Filtrar os itens ao alterar os checkboxes de avaliação
+    $(".rating-filter input[type='checkbox']").change(function() {
+        // ... (lógica para filtrar os itens com base na avaliação)
+    });
+});
